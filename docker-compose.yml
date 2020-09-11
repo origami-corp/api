@@ -14,6 +14,7 @@ services:
       - MARIADB_USER=origami
       - MARIADB_PASSWORD=123456
       - MARIADB_DATABASE=myapp
+    working_dir: /app/myapp
     depends_on:
       - mariadb
   mariadb:
